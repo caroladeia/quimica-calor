@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+
+/* ----------- ::after e ::before: Adesivos que podemos colocar antes ou depois de coisas no site. -----------------*/
+/* ----------- *: Significa "tudo" em um site. ---------------------------*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------- CABEÇLAHO ---------------------------*/
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 20px;
+    width: 100vw;
+}
+
+.logo{
+    width: 10%;
+    height: 10%;
+}
+
+.inicio {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('https://s2.static.brasilescola.uol.com.br/be/2023/02/termometro-marcando-alta-temperatura-apontado-para-o-sol-e-representando-a-ideia-de-calor-e-de-temperatura.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+}
+
+.texto-inicio {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.texto-inicio .headTag {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+.texto-inicio .subTag,
+.sectionHead {
+    font-size: 20px;
+    padding: 25px 0;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+}
+
+section {
+    display: block;
+    padding: 40px 0;
+    width: 100%;
+}
+
+section:nth-child(even) {
+    background-color: #fefefe;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #b6b6b6;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    transition: 1s;
+}
+
+
+/* ----------------------------- MUDANÇAS DO ESTADO FIDSICO ---------------------------*/
+#shop {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10%;
+    margin-bottom: -5%;
+    margin-top: -5%;
+}
+
+.sectionHead {
+    text-align: center;
+    font-size: 40px;
+    margin: 25px 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.box {
+    text-align: center;
+    transition: all 0.2s ease-out;
+    padding: 24px 4px;
+    background-color: #800000;
+    color: #fff;
+    box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.box:hover {
+    background-color: rgb(214, 86, 0);
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.box>p {
+    width: 85%;
+    text-align: center;
+    margin-top: 0;
+    transform: translate(10%, 0%);
+}
+
+.box>.icon {
+    font-size: 40px;
+    border: 2px solid #ffffff;
+    padding: 25px;
+    border-radius: 50%;
+    width: 45%;
+    display: block;
+    margin-left: 28%;
+    margin-bottom: 10px;
+}
+
+.box>h4 {
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.sectionSubHead {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    margin-bottom: 5px;
+    margin-top: 10%;
+}
+
+.sectionSubSubHead{
+    font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+
+/* ------------------------------------------------------ imagens do meio do site ------------------------------------------------------*/
+
+.parallex-section {
+    margin: 0;
+    padding: 0;
+}
+
+.parallex {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+    display: block;
+    height: 40vh;
+    width: 100vw;
+}
+
+#parallex-set-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://img.freepik.com/fotos-premium/gotas-de-agua-delicadas-com-belo-fundo-gerado-por-ia_874192-616.jpg');
+}
+
+#parallex-set-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://www.infomoney.com.br/wp-content/uploads/2022/03/pexels-pixabay-416528.jpg?resize=916%2C515&quality=50&strip=all');
+}
+
+#parallex-set-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://caldobom.com.br/uploads/7-beneficios-de-alimentos-preparados-no-vapor-1-154487dded5d3889b2966b03ec553e241655842133.jpg');
+}
+
+#parallex-set-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://www.resumoescolar.com.br/wp-content/imagens/reacoes-endotermicas-e-exotermicas-quimica1.jpg');
+}
+
+#parallex-set-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://www.semana.com/resizer/xndC0lWBO68rS8GMnKcrEMjcDGI=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/NI6CBELPIRDDPLSAQ5EJZRS2DM.jpg');
+}
+/* ------------------------------------------------------ agitação, calor e poder ------------------------------------------------------*/
+.item-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    box-shadow: 9px 6px 13px rgba(0, 0, 0, 0.32);
+    transition: all 0.2s;
+}
+
+.item-box:hover {
+    transform: scale(1.2);
+}
+
+.item-box .item-box-img {
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.item-box .item-box-img>img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.item-box-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 21px;
+    padding-left: 0;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.item-box .item-box-sub-text {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    line-height: 1;
+    margin: 52px 8px;
+    margin-left: 21px;
+    width: 80%;
+    font-size: 20px;
+    color: #e6e6e6;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.item-box .item-box-btn {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    margin: 105px 8px;
+    margin-left: 22px;
+    font-size: 14px;
+    padding: 5px 18px;
+    color: #fff;
+    background-color: #7a7986;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.item-box .item-box-btn:hover {
+    background-color: #202427;
+}
+
+.card-img-top {
+    max-height: 190px;
+}
+.card {
+    margin: 15px 0;
+    cursor: pointer;
+    box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.row1 {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.col-md-4{
+    padding: -99%;
+}
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+      text-align: center;
+    }
+  }
+
+
+.row1{
+    margin-left: 25%;
+}
+
+/* ------------------------------------------------------ rodapé ------------------------------------------------------*/
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    line-height: 100px;
+    background-color: #343a40;
+    z-index: 100;
+    text-align: right;
+    color: white;
+}
